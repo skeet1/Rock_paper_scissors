@@ -6,4 +6,6 @@ function comp_turn() {
 	return (Math.ceil(Math.random() * 3));
 }
 
+function rock() {
 
+}
