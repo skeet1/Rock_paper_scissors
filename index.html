@@ -11,27 +11,33 @@
 	<header>
 		<h2>Rock Paper Scissors</h2>
 	</header>
-	<section class="score">
-		<div>
+	<section class="score_board">
+		<div class="move player_chose" id="p_move">
+			<img src="images/rock.jpg" alt="" class="rock" id="p_rock">
+			<img src="images/paper.jpg" alt="" class="paper" id="p_paper">
+			<img src="images/scissors.jpg" alt="" class="scissors" id="p_scissors">
+		</div>
+		<div class="score">
 			<span id="user_score">0</span>
 			<span> : </span>
 			<span id="comp_score">0</span>
 		</div>
+		<div class="move comp_chose" id="move">
+			<img src="images/rock.jpg" alt="" class="rock" id="rock">
+			<img src="images/paper.jpg" alt="" class="paper" id="paper">
+			<img src="images/scissors.jpg" alt="" class="scissors" id="scissors">
+		</div>
 	</section>
 	<h3>Make Your Move</h3>
 	<section id="chose" class="chose">
-		<div><img onclick="rock()" src="images/rock.jpg" alt=""></div>
-		<div><img onclick="paper()" src="images/paper.jpg" alt=""></div>
-		<div><img onclick="scissors()" src="images/scissors.jpg" alt=""></div>
+		<div><img id="but1" onclick="rock_b()" src="images/rock.jpg" alt=""></div>
+		<div><img id="but2" onclick="paper_b()" src="images/paper.jpg" alt=""></div>
+		<div><img id="but3" onclick="scissors_b()" src="images/scissors.jpg" alt=""></div>
 	</section>
-	<h2 id="result" class="result" >You win</h2>
-	<!-- <p>Chose Rock Paper or Scissors</p>
-	<button onclick="one()">Rock</button>
-	<button onclick="two()">Paper</button>
-	<button onclick="three()">Scissors</button>
-	<h2>You chose <span style= "margin-right: 200px" id="p_chose"></span>, AND You win : <span id="p_nwin"></span> times.</h2>
-	<h2>Computer Chose <span style= "margin-right: 130px" id="c_chose"></span>, And Computer Win :<span id="c_nwin"> times.</span> </h2>
-	<h2 id="result"></h2> -->
+	<h2 id="result" class="result" ></h2>
+	<div class="play_again">
+		<button onclick="reset()" id="play" class="play">Play Again</button>
+	</div>
 	<script src="js/script.js"></script>
 </body>
 </html>
