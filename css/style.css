@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+
+* {
+	font-family: 'Graduate', cursive;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #262633;
+}
+
+header {
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+}
+
+.score {
+	width: 500px;
+	height: 200px;
+	border: 3px solid #fff;
+	margin: auto;
+	margin-top: 40px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 80px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.score::before {
+	content: "USER";
+	font-size: 18px;
+	background-color: #dd4235;
+	padding: 5px 10px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0px;
+}
+
+.score::after {
+	content: "COMP";
+	font-size: 18px;
+	background-color: #dd4235;
+	padding: 5px 10px;
+	border-radius: 5px;
+	position: absolute;
+	right: 0px;
+}
+
+h3 {
+	color: #fff;
+	font-size: 30px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.chose {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 50px;
+}
+
+.chose div img {
+	width: 150px;
+	height: 150px;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.result {
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+}
